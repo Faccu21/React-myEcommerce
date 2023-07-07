@@ -1,0 +1,10 @@
+[{"id":1,"Marca":"Jaguar","Modelo":"S-Type","Año":2001,"ip_address":"128.146.224.27"},
+{"id":2,"Marca":"Toyota","Modelo":"Camry","Año":2004,"ip_address":"51.40.147.224"},
+{"id":3,"Marca":"Hyundai","Modelo":"Elantra","Año":1993,"ip_address":"55.210.228.28"},
+{"id":4,"Marca":"Honda","Modelo":"Odyssey","Año":2005,"ip_address":"216.199.122.73"},
+{"id":5,"Marca":"Nissan","Modelo":"350Z","Año":2003,"ip_address":"73.7.195.44"},
+{"id":6,"Marca":"Ford","Modelo":"Freestar","Año":2005,"ip_address":"54.102.237.59"},
+{"id":7,"Marca":"Mercury","Modelo":"Topaz","Año":1988,"ip_address":"214.170.176.229"},
+{"id":8,"Marca":"Cadillac","Modelo":"Seville","Año":1999,"ip_address":"100.31.75.239"},
+{"id":9,"Marca":"Chevrolet","Modelo":"Express 2500","Año":2004,"ip_address":"236.125.171.67"},
+{"id":10,"Marca":"GMC","Modelo":"Safari","Año":2005,"ip_address":"217.125.139.2"}]
