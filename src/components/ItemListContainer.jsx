@@ -22,7 +22,7 @@ export const ItemListContainer = props => {
         promesa.then(result => { 
             if (id) {
                 setProducts(
-                    result.filter(products => products.marca === id)
+                    result.filter(products => products.segmento === id)
                 )
             } else {
                 setProducts(result)

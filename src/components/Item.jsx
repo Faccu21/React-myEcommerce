@@ -15,10 +15,11 @@ export const Item = ({autos}) => {
         <Card.Body>
             <Card.Title>{autos.car_model}</Card.Title>
             <Card.Text>Año {autos.car_year}</Card.Text>
-            <Link to={'/item/${autos.id}'}>
+            <Link to={`/item/${autos.id}`}>
                 <Button variant="primary">Más info</Button>
             </Link>
         </Card.Body>
     </Card>
     )
     }
+

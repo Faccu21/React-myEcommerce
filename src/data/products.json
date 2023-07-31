@@ -1,35 +1,304 @@
 [
     {
         "id":1,
+        "segmento":"Deportivo",
         "marca":"Porsche",
         "car_model":"911 Turbo S Exclusive Series",
         "car_year":2018,
-        "ip_address":"128.146.224.27",
+        "price":"$200",
         "car_img": "https://www.alainclass.com/wp-content/uploads/2020/10/2018-Porsche-911-Turbo-S-Exclusive-Series-1-of-500-GOLD-2152-3.jpg"
     },
     
     {   "id":2,
+        "segmento":"Deportivo",
         "marca":"Ferrari",
         "car_model":"F12 Berlinetta",
         "car_year":2013,
-        "ip_address":"51.40.147.224",
+        "price":"$200",
         "car_img": "https://www.alainclass.com/wp-content/uploads/2016/07/1170-FERRARI-F12-92798-20.jpg"
     },
 
     {   "id":3,
+        "segmento":"Deportivo",
         "marca":"Mercedes Benz",
         "car_model":"SLR McLaren",
         "car_year":2006,
-        "ip_address":"55.210.228.28",
+        "price":"$175",
         "car_img": "https://www.alainclass.com/wp-content/uploads/2020/01/20200422_172808.jpg"
     },
 
     {   "id":4,
+        "segmento":"Deportivo",
         "marca":"McLaren",
         "car_model":"MP4",
         "car_year":2012,
-        "ip_address":"216.199.122.73",
+        "price":"$180",
         "car_img":"https://www.alainclass.com/wp-content/uploads/2022/01/2012-McLaren-MP4-12C-ORANGE-0349-4.jpg"
-    }
+    },
 
+    {   "id":5,
+        "segmento":"Deportivo",
+        "marca":"Aston Martin",
+        "car_model":"Vantage GT12",
+        "car_year":2016,
+        "price":"$200",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2022/12/2016-Aston-Martin-Vantage-GT12-orange-2527-2.jpg"
+    },
+
+    
+    {   "id":6,
+        "segmento":"Camioneta|SUV",
+        "marca":"Audi",
+        "car_model":"E-Tron S SportBack",
+        "car_year":2022,
+        "price":"$120",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2023/01/2022-Audi-E-Tron-S-SportBack-RESHOOT-Blue-2468-2.jpg"
+    },
+
+    
+    {   "id":7,
+        "segmento":"Deportivo",        
+        "marca":"Audi",
+        "car_model":"RS6 Avant",
+        "car_year":2023,
+        "price":"$120",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2023/04/2023-Audi-RS6-Avant-Black-2775-2.jpg"
+    },
+
+
+    
+    {   "id":8,
+        "segmento":"Camioneta|SUV",
+        "marca":"Bentley",
+        "car_model":"Bentayga W12",
+        "car_year":2018,
+        "price":"$135",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2021/08/2018-Bentley-Bentayga-W12-Gold-8225-8.jpg"
+    },
+
+
+    
+    {   "id":9,
+        "segmento":"Camioneta|SUV",
+        "marca":"BMW",
+        "car_model":"X7 XDrive 40i",
+        "car_year":2023,
+        "price":"$125",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2023/05/2023-BMW-X7-XDrive-40i-Grey-2520-2.jpg"
+    },
+
+    
+    {   "id":10,
+        "segmento":"Deportivo",
+        "marca":"BMW",
+        "car_model":"M8 Competition",
+        "car_year":2020,
+        "price":"$170",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2023/05/2020-BMW-M8-Competition-White-7493-2.jpg"
+    },
+
+
+    
+    {   "id":11,
+        "segmento":"Hypercar",
+        "marca":"Bugatti",
+        "car_model":"Veyron Linea Vivere by Mansory – 1 of 2",
+        "car_year":2006,
+        "price":"$350",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2020/02/2006-Bugatti-Veyron-Linea-Vivere-By-Mansory-rs-WHITE-5003-2.jpg"
+    },
+
+
+    
+    {   "id":12,
+        "segmento":"Camioneta|SUV",
+        "marca":"Chevrolet",
+        "car_model":"Yenko Supercharged",
+        "car_year":2012,
+        "price":"$100",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2022/09/2021-Chevrolet-Yenko-Supercharged-RESHOOT-Grey-5212-2.jpg"
+    },
+
+
+    
+    {   "id":13,
+        "segmento":"Hypercar",
+        "marca":"Ferrari",
+        "car_model":"LaFerrari",
+        "car_year":2015,
+        "price":"$350",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2020/02/2015-Ferrari-LaFerrari-RED-8642-2-resht.jpg"
+    },
+
+    {   "id":14,
+        "segmento":"Clásico",
+        "marca":"Ford Shelby",
+        "car_model":"GT500 Eleanor",
+        "car_year":1967,
+        "price":"$110",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2017/02/1967-Ford-Shelby-GT500-Eleanor-Gone-in-60-Seconds-SILVER-04TW-32-2.jpg"
+    },
+
+    {   "id":15,
+        "segmento":"Hypercar",
+        "marca":"Koenigsegg",
+        "car_model":"Agera R",
+        "car_year":2014,
+        "price":"$350",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2020/03/2014-Koenigsegg-Agera-R-CARBON-reshoot-2-7102-4.jpg"
+    },
+
+
+    {   "id":16,
+        "segmento":"Deportivo",
+        "marca":"Lamborghini",
+        "car_model":"Murciélago SV LP670-4",
+        "car_year":2010,
+        "price":"$220",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2019/05/2010-Lamborghini-Murcielago-SV-Resht-WHITE-3933-31.jpg"
+    },
+
+
+    {   "id":17,
+        "segmento":"Hypercar",
+        "marca":"Lamborghini",
+        "car_model":"Centenario Roadster",
+        "car_year":2018,
+        "price":"$380",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2023/03/2018-Lamborghini-Centenario-Roadster-1-of-20-Grey-6873-56.jpg"
+    },
+
+
+    {   "id":18,
+        "segmento":"Camioneta|SUV",
+        "marca":"Lamborghini",
+        "car_model":"Urus",
+        "car_year":2019,
+        "price":"$140",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2023/05/2019-Lamborghini-Urus-Red-0770-2.jpg"
+    },
+
+
+    {   "id":19,
+        "segmento":"Camioneta|SUV",
+        "marca":"Lexus",
+        "car_model":"LX600 VIP",
+        "car_year":2022,
+        "price":"$140",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2023/07/2023-Lexus-LX600-VIP-White-6747-8.jpg"
+    },
+
+
+    {   "id":20,
+        "segmento":"Hypercar",
+        "marca":"McLaren",
+        "car_model":"P1",
+        "car_year":2015,
+        "price":"$350",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2017/12/2015-McLaren-P1-1-of-375-SILVER-0373-3.jpg"
+    },
+
+
+    {   "id":21,
+        "segmento":"Hypercar",
+        "marca":"McLaren",
+        "car_model":"P1 GTR",
+        "car_year":2015,
+        "price":"$380",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2022/12/2015-McLaren-P1-GTR-RD-BLACK-0039-2.jpg"
+    },
+
+
+    {   "id":22,
+        "segmento":"Camioneta|SUV",
+        "marca":"Mercedes-Benz",
+        "car_model":"G63 AMG",
+        "car_year":2022,
+        "price":"$170",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2022/11/2022-Mercedes-Benz-G63-AMG-Orange-0774-2.jpg"
+    },
+
+
+    {   "id":23,
+        "segmento":"Luxury",
+        "marca":"Mercedes-Benz",
+        "car_model":"S580 Maybach",
+        "car_year":2019,
+        "price":"$170",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2023/03/2019-Mercedes-Benz-S580-Maybach-White-1070-2.jpg"
+    },
+
+
+
+    {   "id":24,
+        "segmento":"Camioneta|SUV",
+        "marca":"Mercedes-Benz",
+        "car_model":"G63 AMG 6X6",
+        "car_year":2014,
+        "price":"$200",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2023/04/2014-Mercedes-Benz-G63-AMG-6X6-White-1817-4.jpg"
+    },
+
+
+    {   "id":25,
+        "segmento":"Luxury",
+        "marca":"Mercedes-Benz",
+        "car_model":"V250 Maybach",
+        "car_year":2021,
+        "price":"$200",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2023/04/2021-Mercedes-Benz-V250-Maybach-Black-5949-2.jpg"
+    },
+
+
+
+    {   "id":26,
+        "segmento":"Deportivo",
+        "marca":"Mercedes-Benz",
+        "car_model":"SL65 Black Series",
+        "car_year":2009,
+        "price":"$180",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2023/05/2009-Mercedes-Benz-SL65-Black-Series-White-8566-2.jpg"
+    },
+
+
+
+    {   "id":27,
+        "segmento":"Hypercar",
+        "marca":"Pagani",
+        "car_model":"Huayra Roadster BC",
+        "car_year":2020,
+        "price":"$400",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2022/12/2020-Pagani-Huyara-BC-Roadster-WHITE-6008-3.jpg"
+    },
+
+
+
+    {   "id":28,
+        "segmento":"Hypercar",
+        "marca":"Porsche",
+        "car_model":"918 Spyder",
+        "car_year":2015,
+        "price":"$320",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2022/09/2015-Porsche-918-Spyder-GREY-0886-10.jpg"
+    },
+
+
+    {   "id":29,
+        "segmento":"Luxury",
+        "marca":"Rolls Royce",
+        "car_model":"Ghost",
+        "car_year":2022,
+        "price":"$300",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2022/08/2022-Rolls-Royce-Ghost-Blue-white-3661-2.jpg"
+        
+    },
+
+    {   "id":30,
+        "segmento":"Luxury",
+        "marca":"Rolls Royce",
+        "car_model":"Phantom Coupe",
+        "car_year":2013,
+        "price":"$185",
+        "car_img":"https://www.alainclass.com/wp-content/uploads/2023/01/2013-Rolls-Royce-Phantom-Coupe-WHITE-6008-3.jpg"
+    }
 ]
