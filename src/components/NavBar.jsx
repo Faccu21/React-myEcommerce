@@ -7,7 +7,7 @@ import { CartWidget } from "./CartWidget";
 import data from "../data/products.json"
 import { Link } from "react-router-dom";
 
-const categories = data.map(products => products.marca)
+const categories = data.map(products => products.segmento)
 
 const unique = new Set(categories)
  
@@ -24,12 +24,14 @@ export const NavBar = () => (
           <NavLink 
           key={item} 
           className="nav-link" 
-          to={`/marca/${item}`}>{item}
+          to={`/segmento/${item}`}>{item}
           </NavLink>
         ))}
         
       </Nav>
-      <CartWidget />
+      <Link to="/carrito">
+        <CartWidget />
+      </Link>
     </Container>
   </Navbar>
-)
+) 
