@@ -10,25 +10,25 @@ export const CartProvider = ({children}) => {
     const [carrito, setCarrito] = useState(carritoInicial);
 
     const agregarAlCarrito = (autos, cantidad) => {
-        const itemAgregado = { ...autos, cantidad };
+        const autosAgregados = { ...autos, cantidad };
 
         const nuevoCarrito = [...carrito];
-        const estaEnElCarrito = nuevoCarrito.find((products) => products.id === itemAgregado.id);
-
+        const estaEnElCarrito = nuevoCarrito.find((products) => products.id === autosAgregados.id);
+   
         if (estaEnElCarrito) {
             estaEnElCarrito.cantidad += cantidad;
         } else {
-            nuevoCarrito.push(itemAgregado);
+            nuevoCarrito.push(autosAgregados);
         }
         setCarrito(nuevoCarrito);
     }
 
-    const cantidadEnCarrito = () => {
+    const cantidadDelCarrito = () => {
         return carrito.reduce((acc, prod) => acc + prod.cantidad, 0);
     }
 
     const precioTotal = () => {
-        return carrito.reduce((acc, prod) => acc + prod.precio * prod.cantidad, 0);
+        return carrito.reduce((acc, prod) => acc + prod.price * prod.cantidad, 0);
     }
 
     const vaciarCarrito = () => {
@@ -44,7 +44,7 @@ export const CartProvider = ({children}) => {
         <CartContext.Provider value={ {
             carrito,
             agregarAlCarrito,
-            cantidadEnCarrito,
+            cantidadDelCarrito,
             precioTotal,
             vaciarCarrito
         } }>

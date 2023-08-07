@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom"
 import data from "../data/products.json"
 import Container from 'react-bootstrap/Container';
 import { ItemList } from "./ItemList";
-
+import { collection, getDocs } from "firebase/firestore";
+import { db } from ".../firebase/config";
 
 
 export const ItemListContainer = props => {
@@ -18,17 +19,22 @@ export const ItemListContainer = props => {
             }, 2000)
             
         })
+    
+        const productsRef = collection (db, "products");
 
-        promesa.then(result => { 
-            if (id) {
+        getDocs(productsRef)
+            .then((resp) => {
+            
                 setProducts(
-                    result.filter(products => products.segmento === id)
+                    resp.docs.map((doc) => {
+                        return { ...doc.data(), id: doc.id}
+                    })
                 )
-            } else {
-                setProducts(result)
-            }
-        })
-    }, [id])
+
+
+            })
+      
+    }, [id]) 
 
     return (
     <Container className="h1">
@@ -40,4 +46,15 @@ export const ItemListContainer = props => {
             )}
     </Container>
     )
-}
+    
+} 
+
+ /* promesa.then(result => { 
+            if (id) {
+                setProducts(
+                    result.filter(products => products.segmento === id)
+                )
+            } else {
+                setProducts(result)
+            }
+        })*/ 
