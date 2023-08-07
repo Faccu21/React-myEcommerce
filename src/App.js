@@ -36,3 +36,7 @@ export default function App() {
  <Route path="/carrito" element={<Carrito />}/>
  <Route path="/checkout" element={<Checkout />}
           />*/ 
+ /* 
+ <Route path="/carrito" element={<Carrito />}/>
+ <Route path="/checkout" element={<Checkout />}
+          />*/ 
