@@ -2,7 +2,6 @@
     {
         "id":1,
         "segmento":"Deportivo",
-        "segmento":"Deportivo",
         "marca":"Porsche",
         "car_model":"911 Turbo S Exclusive Series",
         "car_year":2018,
@@ -11,7 +10,6 @@
     },
     
     {   "id":2,
-        "segmento":"Deportivo",
         "segmento":"Deportivo",
         "marca":"Ferrari",
         "car_model":"F12 Berlinetta",
@@ -22,7 +20,6 @@
 
     {   "id":3,
         "segmento":"Deportivo",
-        "segmento":"Deportivo",
         "marca":"Mercedes Benz",
         "car_model":"SLR McLaren",
         "car_year":2006,
@@ -31,7 +28,6 @@
     },
 
     {   "id":4,
-        "segmento":"Deportivo",
         "segmento":"Deportivo",
         "marca":"McLaren",
         "car_model":"MP4",

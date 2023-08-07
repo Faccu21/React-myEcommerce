@@ -4,7 +4,7 @@ import data from "../data/products.json"
 import Container from 'react-bootstrap/Container';
 import { ItemList } from "./ItemList";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from ".../firebase/config";
+import { db } from "../firebase/config.js";
 
 
 export const ItemListContainer = props => {
@@ -13,12 +13,7 @@ export const ItemListContainer = props => {
     const { id } = useParams() 
 
     useEffect(() => {
-        const promesa = new Promise((resolve, rejected) => {
-            setTimeout(() => {
-                resolve(data);
-            }, 2000)
-            
-        })
+        
     
         const productsRef = collection (db, "products");
 
@@ -27,7 +22,7 @@ export const ItemListContainer = props => {
             
                 setProducts(
                     resp.docs.map((doc) => {
-                        return { ...doc.data(), id: doc.id}
+                        return { ...doc.data(), id: doc.id }
                     })
                 )
 
@@ -39,17 +34,21 @@ export const ItemListContainer = props => {
     return (
     <Container className="h1">
         <h1>{props.greeting}</h1>
-        {products.length === 0 ? ( 
-        <div>Loading...</div>
-        ):( 
-            <ItemList products={products}/>
-            )}
+        
     </Container>
     )
     
 } 
 
- /* promesa.then(result => { 
+ /* 
+ const promesa = new Promise((resolve, rejected) => {
+            setTimeout(() => {
+                resolve(data);
+            }, 2000)
+            
+        })
+ 
+ promesa.then(result => { 
             if (id) {
                 setProducts(
                     result.filter(products => products.segmento === id)
@@ -57,4 +56,12 @@ export const ItemListContainer = props => {
             } else {
                 setProducts(result)
             }
-        })*/ 
+        })
+        
+   {products.length === 0 ? ( 
+        <div>Loading...</div>
+        ):( 
+            <ItemList products={products}/>
+            )}     
+        
+        */ 

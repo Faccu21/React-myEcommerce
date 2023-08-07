@@ -8,7 +8,6 @@ import data from "../data/products.json"
 import { Link } from "react-router-dom";
 
 const categories = data.map(products => products.segmento)
-const categories = data.map(products => products.segmento)
 
 const unique = new Set(categories)
  
@@ -25,7 +24,6 @@ export const NavBar = () => (
           <NavLink 
           key={item} 
           className="nav-link" 
-          to={`/segmento/${item}`}>{item}
           to={`/segmento/${item}`}>{item}
           </NavLink>
         ))}
