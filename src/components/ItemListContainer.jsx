@@ -3,8 +3,8 @@ import { useParams } from "react-router-dom"
 import data from "../data/products.json"
 import Container from 'react-bootstrap/Container';
 import { ItemList } from "./ItemList";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebase/config.js";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../firebase/config";
 
 
 export const ItemListContainer = props => {
@@ -17,7 +17,10 @@ export const ItemListContainer = props => {
     
         const productsRef = collection (db, "products");
 
-        getDocs(productsRef)
+        const q = id ? query(productsRef, where("segmento","==", id)) : productsRef;
+
+
+        getDocs(q)
             .then((resp) => {
             
                 setProducts(
@@ -32,10 +35,15 @@ export const ItemListContainer = props => {
     }, [id]) 
 
     return (
-    <Container className="h1">
-        <h1>{props.greeting}</h1>
-        
-    </Container>
+        <Container className="h1">
+            <h1>{props.greeting}</h1>
+            {products.length === 0 ? ( 
+            <div>Loading...</div>
+            ):( 
+             <ItemList products={products}/>
+            )}     
+        </Container>
+    
     )
     
 } 
@@ -58,10 +66,13 @@ export const ItemListContainer = props => {
             }
         })
         
+<Container className="h1">
+        <h1>{props.greeting}</h1>
    {products.length === 0 ? ( 
         <div>Loading...</div>
         ):( 
             <ItemList products={products}/>
             )}     
-        
+     </Container>
+    )     
         */ 
