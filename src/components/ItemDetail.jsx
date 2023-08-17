@@ -8,8 +8,7 @@ export const ItemDetail = ({ autos }) => {
 
   const {carrito, agregarAlCarrito } = useContext(CartContext);
 
-  //const { carrito, agregarAlCarrito} = useContext(CartContext);
-  //console.log(carrito);
+  
 
   const [cantidad, setCantidad] = useState(1)
 
@@ -30,7 +29,9 @@ export const ItemDetail = ({ autos }) => {
         <div>{autos.car_model}</div>
         <div>{autos.car_year}</div>
         <div>${autos.price} x día</div>
-        <img src={autos.car_img} alt={autos.car_model} />
+        <img style={{width:'80rem'}} src={autos.car_img} alt={autos.car_model} />
+        <br />
+        <br />
         <ItemCount
        cantidad={cantidad}
        handleSumar={handleSumar}

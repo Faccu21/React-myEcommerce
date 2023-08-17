@@ -6,6 +6,7 @@ const styles = {
     img: {
         height: "2rem",
         width: "auto",
+        
     },
     span: {
         color:"white",
@@ -19,7 +20,7 @@ export const CartWidget = () => {
 
     return (
         <div>
-             <Link to="/carrito"><img src={cart} style={styles.img} alt="Shop" /> <span style={styles.span}>{cantidadDelCarrito()}</span> </Link>
+             <Link className="shop"  to="/carrito" ><img src={cart} style={styles.img} alt="Shop" /> <span style={styles.span}>{cantidadDelCarrito()}</span> </Link>
         </div>
     )  
  

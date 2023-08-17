@@ -30,8 +30,8 @@ export const Checkout = () => {
 
     if (pedidoId) {
         return (
-            <div>
-                <h1>Muchas gracias por la compra</h1>
+            <div className="gracias">
+                <h1 style={{color:'darkred'}}>Muchas gracias por la compra</h1>
                 <p>En breve te llegará un mail con los pasos a seguir</p>
                 <h5>El código de tu compra es: {pedidoId}</h5>
             </div>
@@ -41,8 +41,8 @@ export const Checkout = () => {
 
     return (
 
-        <div>
-        <h1>Terminar compra</h1>
+        <div className="form">
+        <h1 style={{color:'darkred'}}>Terminar compra</h1>
         <form onSubmit={handleSubmit(comprar)}>
 
             <input type="text" placeholder="Ingresá tu nombre" {...register("nombre")} />

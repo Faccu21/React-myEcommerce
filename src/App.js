@@ -12,6 +12,7 @@ import { Checkout } from "./components/Checkout";
 export default function App() {
 
   return (
+    <div className="app" style={{ backgroundColor: 'black' }} >
     <CartProvider>
       <BrowserRouter>
         <NavBar />  
@@ -27,6 +28,7 @@ export default function App() {
        </Routes>
       </BrowserRouter>
     </CartProvider>
+    </div>
   )
 }
 

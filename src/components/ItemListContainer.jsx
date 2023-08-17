@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
-import data from "../data/products.json"
 import Container from 'react-bootstrap/Container';
 import { ItemList } from "./ItemList";
 import { collection, getDocs, query, where } from "firebase/firestore";
@@ -35,10 +34,10 @@ export const ItemListContainer = props => {
     }, [id]) 
 
     return (
-        <Container className="h1">
+        <Container className="container" style={{fontFamily:'Times New Roman' }}>
             <h1>{props.greeting}</h1>
             {products.length === 0 ? ( 
-            <div>Loading...</div>
+            <div style={{color: 'darkred'}}>Loading...</div>
             ):( 
              <ItemList products={products}/>
             )}     

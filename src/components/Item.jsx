@@ -16,7 +16,7 @@ export const Item = ({autos}) => {
             <Card.Title>{autos.car_model}</Card.Title>
             <Card.Text>Año {autos.car_year}</Card.Text>
             <Link to={`/item/${autos.id}`}>
-                <Button variant="primary">Más info</Button>
+                <Button style={{borderColor:'darkred', backgroundColor: 'darkred' }} variant="primary">Más info</Button>
             </Link>
         </Card.Body>
     </Card>

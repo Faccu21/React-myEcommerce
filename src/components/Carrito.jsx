@@ -12,15 +12,15 @@ const Carrito = () => {
     }
 
   return (
-    <div >
-        <h1>Carrito</h1>
+    <div className='carrito' >
+        <h1 style={{color:'darkred'}} >Carrito</h1>
 
         {
             carrito.map((prod) => (
                 <div key={prod.id}>
                     <br />
-                    <h3>{prod.marca} {prod.car_model}</h3>
-
+                    <h3 style={{color:'darkred'}} >{prod.marca} {prod.car_model}</h3>
+                   
                     <p>Precio unidad: ${prod.price}</p>
                     <p>Precio total: ${prod.price * prod.cantidad}</p>
                     <p>Cant: {prod.cantidad} días</p>
@@ -32,16 +32,18 @@ const Carrito = () => {
         { 
             carrito.length > 0 ?
             <>      
-                <h2>Precio total: ${precioTotal()}</h2>
+                <h2 style={{color:'darkred'}} >Precio total: ${precioTotal()}</h2>
                 <button onClick={handleVaciar}>Vaciar</button>
-                <Link to="/checkout">Terminar compra</Link>
+                <br />
+                <br />
+                <Link className='end' to="/checkout">Terminar compra</Link>
             </> :
-            <h2>El carrito está vacío</h2>
+            <h2 style={{color:'darkred'}} >El carrito está vacío</h2>
         }
     </div>
     
        
-        //        <Link to="/checkout">Finalizar compra</Link>
+       
        
         
     

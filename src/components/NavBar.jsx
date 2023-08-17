@@ -10,14 +10,14 @@ import { Link } from "react-router-dom";
 const categories = data.map(products => products.segmento)
 
 const unique = new Set(categories)
- 
+
 
 export const NavBar = () => (
 
-    <Navbar bg="dark" variant="dark">
+  <Navbar className='navbar' bg="dark" variant="dark" >
     <Container>
-      <Link to={'/'}>
-        <Navbar.Brand>Romio</Navbar.Brand>
+      <Link className='Link' to={'/'}>
+        <Navbar.Brand>Romio Car</Navbar.Brand>
       </Link>
       <Nav className="me-auto">
         {[...unique].map(item => (
@@ -29,7 +29,7 @@ export const NavBar = () => (
         ))}
         
       </Nav>
-      <Link to="/carrito">
+      <Link  to="/carrito">
         <CartWidget />
       </Link>
     </Container>
